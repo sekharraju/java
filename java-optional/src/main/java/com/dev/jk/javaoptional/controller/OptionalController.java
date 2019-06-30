@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
+import java.util.function.Function;
 
 @RestController
 @RequestMapping("/java/feature")
@@ -133,5 +134,24 @@ public class OptionalController {
                 sb.toString()
         );
         return ResponseEntity.ok(results);
+    }
+
+    @GetMapping("/optional/or-else-throw-with-exception")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<String> orElseThrowException() {
+        Optional<String> optional = Optional.empty();
+        String results = optional.orElseThrow(() ->
+                new RuntimeException("Value not found. Hence throwing exception")
+        );
+        return ResponseEntity.ok(results);
+    }
+
+    @GetMapping("/optional/flatmap")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<String> flatmap() {
+        Optional<String> optional = Optional.of("Hello");
+        Function<String , Optional<String>> fun = (s) -> Optional.of(s + " added mapper");
+        Optional<String> flatMapResults = optional.flatMap(fun);
+        return ResponseEntity.ok(flatMapResults.get());
     }
 }
