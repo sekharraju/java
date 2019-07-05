@@ -1,4 +1,4 @@
-package com.dev.jk.javaoptional.config;
+package com.dev.jk.java.config;
 
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Configuration;

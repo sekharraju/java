@@ -1,4 +1,4 @@
-package com.dev.jk.javaoptional.controller;
+package com.dev.jk.java.features.optional.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import java.util.Optional;
 import java.util.function.Function;
 
 @RestController
-@RequestMapping("/java/feature")
+@RequestMapping("/java/features")
 public class OptionalController {
 
     @GetMapping("/optional/empty")
@@ -31,12 +31,12 @@ public class OptionalController {
 
     @GetMapping("/optional")
     @ResponseStatus(HttpStatus.OK)
-    public Optional<String> nullable(@RequestParam(name = "nullable") String nullable) {
+    public Optional<String> nullable(@RequestParam(name = "input", defaultValue = "") String input) {
         Optional<String> optional = Optional.empty();
-        if(nullable != null && !nullable.isEmpty()) {
-            optional = Optional.of(nullable);
+        if(input != null && !input.isEmpty()) {
+            optional = Optional.of(input);
         }
-        optional = Optional.of(optional.orElse("Hello"));
+        optional = Optional.of(optional.orElse("Hello, there was no input provided for the request parameter named input !!!"));
         return optional;
     }
 
