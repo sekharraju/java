@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 @RestController
-@RequestMapping("/java/features")
+@RequestMapping("/api/java/features")
 public class ForEachController {
 
     @GetMapping("/foreach/internal-consumer")

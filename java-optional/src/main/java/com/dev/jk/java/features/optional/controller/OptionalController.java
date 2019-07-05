@@ -12,7 +12,7 @@ import java.util.Optional;
 import java.util.function.Function;
 
 @RestController
-@RequestMapping("/java/features")
+@RequestMapping("/api/java/features")
 public class OptionalController {
 
     @GetMapping("/optional/empty")
