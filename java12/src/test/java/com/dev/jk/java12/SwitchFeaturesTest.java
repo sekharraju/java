@@ -24,7 +24,7 @@ public class SwitchFeaturesTest {
 
     @Test
     public void newSwitch() {
-        String newSwitch = switchFeatures.oldSwitch();
+        String newSwitch = switchFeatures.newSwitch();
         Assert.assertEquals("greater than 3", newSwitch);
     }
 
