@@ -13,3 +13,12 @@ JDK 12 features summary:
 6. Make aborting the garbage collection process much more efficient by breaking up the mixed collection group into mandatory and optional parts
 
 7. Upgrade the G1 garbage collector to instantly return unused Java heap memory to the operating system when idle
+
+Switch expressions (JEP 325)
+Default CDS(class data-sharing ) archives
+Shenandoah
+Microbenchmark suite
+JVM constants API
+One AArch64 port, not two
+Abortable mixed collections for G1
+Promptly return unused committed memory from G1
