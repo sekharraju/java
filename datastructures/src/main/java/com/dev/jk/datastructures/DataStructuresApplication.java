@@ -2,12 +2,14 @@ package com.dev.jk.datastructures;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-public class DatastructuresApplication {
+@EnableSwagger2
+public class DataStructuresApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DatastructuresApplication.class, args);
+		SpringApplication.run(DataStructuresApplication.class, args);
 	}
 
 }
