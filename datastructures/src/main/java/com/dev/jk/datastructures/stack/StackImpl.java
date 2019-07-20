@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class StackImpl<T> implements Stack<T> {
+public class StackImpl<T> implements IStack<T> {
 
     private static int INDEX_EMPTY_STACK = -1;
 

@@ -1,7 +1,5 @@
-package com.dev.jk.datastructures;
+package com.dev.jk.datastructures.stack;
 
-import com.dev.jk.datastructures.stack.Stack;
-import com.dev.jk.datastructures.stack.StackImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class StackImplTest {
 
-    private Stack<Integer> stack;
+    private IStack<Integer> stack;
 
     @Before
     public void setUp() {

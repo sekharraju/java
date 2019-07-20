@@ -1,6 +1,6 @@
 package com.dev.jk.datastructures.stack;
 
-public interface Stack<T> {
+public interface IStack<T> {
 
     boolean push(T element);
 
