@@ -13,6 +13,7 @@
         <module>design-patterns</module>
         <module>java12</module>
         <module>java-optional</module>
+        <module>datastructures</module>
     </modules>
 
 </project>
