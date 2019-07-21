@@ -33,7 +33,7 @@ public class SwitchFeatures {
 
     public String newSwitch()
     {
-        final int integer = 5;
+       /* final int integer = 5;
         String numericString = switch (integer)
                                     {
                                         case 1          ->      "one";
@@ -42,6 +42,7 @@ public class SwitchFeatures {
                                         case 4, 5, 6, 7 ->      "greater than 3";
                                         default         ->      "N/A";
                                     };
-        return numericString;
+        return numericString; */
+       return null;
     }
 }
